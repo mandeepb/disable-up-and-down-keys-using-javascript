@@ -1,4 +1,12 @@
-disable-up-and-down-keys-using-javascript
-=========================================
+$("id").keydown(function(e){ 
+switch(e.which) { 
+case 38: // up 
+break; 
 
-disable up and down keys using javascript
+case 40: // down 
+break; 
+
+default: return; // exit this handler for other keys 
+} 
+e.preventDefault(); 
+});
